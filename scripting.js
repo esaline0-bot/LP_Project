@@ -523,7 +523,6 @@ For this reason, I advise everyone to seek a go learn first aid in person!`;
 function checkPhrase(line){
     for (let index = 0; index < uniquePhrases.length; index++){
     if(line === uniquePhrases[index]){
-            alert("Found You! ");
             eventSpawn();
     }
 
@@ -616,6 +615,7 @@ function sendHome(){
     window.location.href= 'Lazarus_Project.html';
     clickAudio.volume = 0.3;
 }
+
 
 
 
