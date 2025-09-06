@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang= "en-us">
+
+
+<head>
+    <meta charset="utf-8">
+    <title> First Aid Basics</title>
+<style> 
+body {
+    #grad1 {
+    background-color:#47b6c9;
+    border: 12px double #0c3863; 
+    background-image: radial-gradient(circle, #0e5a85 22%, #4fc2d1 44%, #12948c 100%);
+    max-height:900px;
+    max-width: 1100px;
+    }
+.div1 {
+      background-color: #fbfcfb;
+      padding: 20px;
+      font-family: sans-serif;
+      font-weight: bold;
+      text-align: left;
+      max-width: 950px;
+      max-height: 800px;
+      border-radius: 5px;
+      margin: 0 auto;
+      margin-top: 55px;
+      margin-bottom: 70px;
+      
+    }
+
+p   {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px;
+    font-size: 20px;
+    }
+
+h1 {
+    border: 8px double #0c3863; 
+    border-inline-color: #2972b6;
+    border-top-width: 15px;
+    border-bottom-width: 15px;
+    margin-right: 600px;
+    color: #fff;
+  text-shadow:
+    3px 3px 0 #206aaf,
+    -3px 3px 0 #206aaf,
+    -3px -3px 0 #206aaf,
+    3px -3px 0 #206aaf;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    margin-bottom: -40px;
+    text-align: center;
+}
+#bottomMove{
+    margin-top: 200px;
+}
+
+    img {
+        
+        left: 75px;
+        width: 35%;
+        height: 20%;
+        max-width: fit-content;
+        max-height: fit-content;
+        margin: 50px;
+        position: absolute;
+    }
+
+    #image2{
+        left: 125px;
+        width: 900px;
+        height: 80%;
+        max-width: fit-content;
+        top: -30px;
+        bottom: 50px;
+        position: absolute;
+    }
+
+h2 {
+    position: relative;
+    text-align: right;
+    font-size: medium;
+    border-style: outset;
+    border-left-style: double;
+    border-color: #0c3863;
+    border-right-color: #2972b6;
+    left: 650px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #206aaf;
+    font-size: 20px;
+    max-height: fit-content;
+    max-width: fit-content;
+    bottom: -250px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    min-width: 150px;
+    justify-content: center;
+    right: -700px;
+    display:block;
+    position: relative;
+    margin: 10px;
+      font-size: 20px;
+      color: #206aaf;
+      font-weight: bold;
+      background-color: antiquewhite;
+      padding: 12px 8px;
+     border: 5px solid #0c3863;
+     border-bottom-color: #2972b6;
+      
+    }
+
+    button:hover {
+      background-color: #11539e;
+      color: antiquewhite;
+    }
+
+    button:active {
+        background-color:rgb(2, 26, 43);
+        color:#b4d8d3;
+    }
+
+}
+
+</style>
+
+</head>
+
+<!-- Actual webpage -->
+<body> 
+<!-- backgrund gradient-->
+<div id="grad1"> 
+    <div class="div1">
+  <h1>  First Aid   </h1>
+    <img src="Images/149CB060-9EEE-40A1-BE27-641C3C4B3498.png" id="image2" > 
+   <!-- placeholder image-->
+   <img src="Images/Titlecross.png" id="image1">
+
+   <h2> Beginner Guide to First Aid  </h2>
+
+  <h1 id="bottomMove">   Basics  </h1>
+
+    <button id="start" onclick="changePageStart()"> Start </button>
+    <button id="quiz"> Quiz </button>
+    <button id="credits"> Credits </button>
+     <audio id="clickAudio" src="Music/buttonClickSound.wav"></audio>
+
+    </div>
+    <div> 
+    <audio id="backgroundAudio" src= 'Music/541689__tri-tachyon__jazzy-vibes-81-jazz-piano-medley.mp3' loop="true" controls></audio> 
+    </div>
+</div>
+
+<!-- Java Script starts -->
+<script type="text/javascript">
+//Creating buttons
+var startButton = document.getElementById("start");
+var quizButton = document.getElementById("quiz");
+var creditsButton = document.getElementById("credits");
+
+const clickAudio = document.getElementById('clickAudio');
+
+window.addEventListener("DOMContentLoaded", event =>{
+    const backgroundAudio = document.getElementById('backgroundAudio');
+    backgroundAudio.volume = 0.3;
+    backgroundAudio.play();
+});
+
+function changePageStart() {
+    buttonClickSound();
+    startButton.disabled = true;
+    setTimeout(() => {
+            startButton.disabled = false;
+            window.location.href= 'LP_Main.html';
+        }, 300)
+}
+
+function changePageQuiz() {
+
+    buttonClickSound();
+}
+
+function changePageCredits() {
+
+    buttonClickSound();
+}
+
+
+//Button click and Background Music
+function buttonClickSound(){
+    clickAudio.volume = 0.3;
+    clickAudio.play();
+}
+
+
+</script>
+
+</body>
+
+</html>

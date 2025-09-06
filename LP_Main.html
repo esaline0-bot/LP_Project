@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang= "en-us">
+
+<head>
+<meta charset="utf-8">
+<title> First Aid Basics Main</title>
+
+<style> 
+ #grad1 {
+    background-color:#47b6c9;
+    border: 12px double #0c3863; 
+    background-image: radial-gradient(circle, #0e5a85 22%, #4fc2d1 44%, #12948c 100%);
+    min-height:70%;
+    min-width: 80%;
+    position:relative;
+    }
+    #blank {
+      background-color: #fbfcfb;
+      font-family: sans-serif;
+      text-align: center;
+      min-width: 500px;
+      min-height: 700px;
+      border-radius: 5px;
+      
+    }
+    p{
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #fbfcfb;
+    
+    }
+    .box{
+        position: fixed;
+        left: 50%;
+        bottom: 150px;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
+        border: 5px solid #0c3863; 
+        width: 80%;
+        height: 25%;
+        padding-top: 25px;
+        max-height: 200px;
+        background-color: #12948c;
+    }
+
+    #next{
+        border: #fbfcfb;
+        background-color: #12948c;
+        color: #e4e7e4ce;
+        right: 13%;
+        bottom: 300px;
+        position: fixed;
+    }
+
+    #next:hover{
+        color: antiquewhite;
+        font-weight: bold;
+    }
+
+    #home{
+        float: right;
+        color: #fbfcfb;
+        background-color: #12948c;
+        border-radius: 5px;
+        border: 2px solid #0c3863;
+        min-height: 50px;
+        min-width: 70px;
+    }
+
+    #home:hover {
+      background-color: #11539e; 
+      color: antiquewhite;
+    }
+
+    #home:active {
+        background-color:rgb(2, 26, 43);
+        color:#b4d8d3;
+    }
+
+    .imagesClass{
+        right: 50%;
+        bottom: 44%;
+        width: 50%;
+        max-width: fit-content;
+        height: 55%;
+        max-height: 550px;
+        position: fixed;
+    }
+
+</style>
+
+
+</head>
+
+<body>
+<div id="grad1"> 
+    <div id="blank">
+        <div class = "imagesClass">
+        <img src="Images/LP_Main2.png" id="imageMain">
+        </div>
+    <div class="box">
+        <p id="mainText"> The term First Aid refers to the care a trained individual provides to an injured or ill person.  </p>
+
+    </div>
+    <!-- homepage button -->
+    <button id="home" onclick="sendHome()"> Home </button>
+
+    <!-- next text button -->
+     <button id="next" onclick="changeToNext()"> Next </button>
+     <audio id="clickAudio" src="Music/buttonClickSound.wav"></audio>
+
+     <audio id="backgroundAudio" src= 'Music/541689__tri-tachyon__jazzy-vibes-81-jazz-piano-medley.mp3' loop></audio>
+     </div>
+</div>
+
+<script type="text/javascript" src="scripting.js"> 
+
+
+</script>
+</body>
+
+</html>
+
