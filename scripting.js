@@ -514,7 +514,7 @@ For this reason, I advise everyone to seek a go learn first aid in person!`;
         //2 second delay till button can be clicked again 
         setTimeout(() => {
             next.disabled = false;
-        }, 0)
+        }, 1500)
 
       
     });
@@ -616,6 +616,7 @@ function sendHome(){
     window.location.href= 'Lazarus_Project.html';
     clickAudio.volume = 0.3;
 }
+
 
 
 
