@@ -80,10 +80,10 @@ h1 {
     .box{
         max-width: 250px;
         max-height: 250px;
-        min-width: 30%;
+        min-width: 35%;
         min-height: 35%;
         top: 130px;
-        right: 10%;
+        right: 7%;
         position:fixed;
         overflow-y: hidden;
         background-image: url("Images/TitleImage.jpeg");
@@ -168,7 +168,7 @@ button {
   <h1 id="moveDown"> Basics  </h1>
 
     <button id="start" onclick="changePageStart()"> Start </button>
-    <button id="quiz"> Quiz </button>
+    <button id="quiz" onclick="changePageQuiz()"> Quiz </button>
     <button id="credits" onclick="changePageCredits()"> Credits </button>
      <audio id="clickAudio" src="Music/buttonClickSound.wav"></audio>
 
@@ -203,7 +203,12 @@ function changePageStart() {
 }
 
 function changePageQuiz() {
-
+    buttonClickSound();
+    quizButton.disabled = true;
+    setTimeout(() => {
+            quizButton.disabled = false;
+            window.location.href= 'Quiz.html';
+        }, 300)
     buttonClickSound();
 }
 
