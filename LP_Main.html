@@ -30,9 +30,9 @@
     
     }
     .box{
-        position: fixed;
+        position: absolute;
         left: 50%;
-        bottom: 20%;
+        bottom: -10%;
         transform: translate(-50%, -50%);
         margin: 0 auto;
         border: 5px solid #0c3863; 
@@ -47,8 +47,8 @@
         border: #fbfcfb;
         background-color: #12948c;
         color: #e4e7e4ce;
-        right: 13%;
-        top: 65%;
+        right: 10%;
+        bottom: 10%;
         position: fixed;
     }
 
@@ -104,11 +104,11 @@
         </div>
     <div class="box">
         <p id="mainText"> The term First Aid refers to the care a trained individual provides to an injured or ill person.  </p>
-
+            <!-- next text button -->
+     <button id="next" onclick="changeToNext()"> Next </button>
     </div>
 
-    <!-- next text button -->
-     <button id="next" onclick="changeToNext()"> Next </button>
+
      <audio id="clickAudio" src="Music/buttonClickSound.wav"></audio>
 
      <audio id="backgroundAudio" src= 'Music/541689__tri-tachyon__jazzy-vibes-81-jazz-piano-medley.mp3' loop></audio>
