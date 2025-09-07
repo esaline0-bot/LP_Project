@@ -470,8 +470,8 @@ For this reason, I advise everyone to seek a go learn first aid in person!`;
             "CPR, standing for cardiopulmonary resuscitation, has been mentioned numerous times throughout this website."];
 
     //Text to appear in the event box
-    const eventText = ["The locations of human's arteries <br>are highlighted in purple! <br>From top to bottom, these include <br>the brachial (upperarm), radial (wrist), <br>femoral (upper thigh), <br>and popliteal (back of knee) arteries",
-        "Pictures one to five <br>depict how to put on a tourniquet <br>and the last image is what it looks like. <br>First, slide the device 2 to 3 inches over the wound. <br>Pull the tail taunt <br>Twist the handle stick until blood flow stops. <br>lock the stick in triangle. <br>Write the time",
+    const eventText = ["The locations of <br>human's arteries <br>are highlighted in purple! <br>From top to bottom, these include <br>the brachial (upperarm), <br>radial (wrist), <br>femoral (upper thigh), <br>and popliteal <br>(back of knee) arteries",
+        "Pictures one to five <br>depict how to put on a tourniquet <br>and the last image <br>is what it looks like. <br>First, slide the device <br>2 to 3 inches over the wound. <br>Pull the tail taunt <br>Twist the handle <br>stick until blood flow stops. <br>lock the stick in triangle. <br>Write the time",
         "The instructions on how to <br>make a homemade tourniquet <br>are shown in the image",
         "A popular hemostatic dressing <br>is QuikClot",
         "Place the splint <br>beneath the broken bone <br>and secure it to the limb",
@@ -479,7 +479,7 @@ For this reason, I advise everyone to seek a go learn first aid in person!`;
         "A symptom of asthma attacks",
         "Inhaler A has a spacer, <br>Inhaler B doesn't",
         "Injectable EPIpens typically look like this. <br>The needle comes out of the orange cap",
-        "People with serious medical conditions <br>typically have a medical tag on them. <br>Check their wrist or necklace for these",
+        "People with serious <br>medical conditions <br>typically have a medical tag on them. <br>Check their wrist or necklace for these",
         "How to put someone <br>in the recovery position",
         "The recovery position. <br>Ensure that they are on their left side <br>and their knee is touching the ground",
         "Eye A is a normal pupil. <br>Eye B is shrunk as a result of opioids",
