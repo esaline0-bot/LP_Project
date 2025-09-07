@@ -96,19 +96,20 @@ h1 {
 
 h2 {
     position: relative;
-    text-align: right;
+    text-align: center;
     font-size: medium;
     border-style: outset;
     border-left-style: double;
     border-color: #fbfcfb;
     border-right-color: #2972b6;
-    right: -73%;
+    right: -70%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #12948c;
     color: #fbfcfb;
     font-size: 20px;
     max-height: fit-content;
-    max-width: fit-content;
+    min-width: fit-content;
+    max-width: 300px;
     bottom: -15%;
     overflow-x: hidden;
 }
@@ -162,13 +163,13 @@ button {
     </div>
 
 
-   <h2> Beginner Guide to First Aid  </h2>
+   <h2> Beginner Guide <br>to First Aid  </h2>
 
   <h1 id="moveDown"> Basics  </h1>
 
     <button id="start" onclick="changePageStart()"> Start </button>
     <button id="quiz"> Quiz </button>
-    <button id="credits"> Credits </button>
+    <button id="credits" onclick="changePageCredits()"> Credits </button>
      <audio id="clickAudio" src="Music/buttonClickSound.wav"></audio>
 
     </div>
@@ -207,8 +208,12 @@ function changePageQuiz() {
 }
 
 function changePageCredits() {
-
-    buttonClickSound();
+     buttonClickSound();
+    creditsButton.disabled = true;
+    setTimeout(() => {
+            creditsButton.disabled = false;
+            window.location.href= 'Credits.html';
+        }, 300)
 }
 
 
