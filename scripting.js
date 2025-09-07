@@ -565,7 +565,7 @@ function eventSpawn(){
     boxEventText.classList.add('box');
     document.body.appendChild(boxEventText);
         boxEventText.style.top = '250px';
-        boxEventText.style.left = '50%';
+        boxEventText.style.left = '45%';
         boxEventText.style.maxWidth = 'fit-content';
         boxEventText.style.maxHeight = 'fit-content';
         boxEventText.style.position = 'absolute';
@@ -615,8 +615,6 @@ function sendHome(){
     window.location.href= 'Lazarus_Project.html';
     clickAudio.volume = 0.3;
 }
-
-
 
 
 
