@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang= "en-us">
+
+
+<head>
+    <meta charset="utf-8">
+    <title> First Aid Basics</title>
+<style>  
+body {
+    #grad1 {
+    background-color:#47b6c9;
+    border: 12px double #0c3863; 
+    background-image: radial-gradient(circle, #0e5a85 22%, #4fc2d1 44%, #12948c 100%);
+    max-height: 100%;
+    max-width: 100%;
+    min-width: 480px;
+    left: 50%;
+    overflow: hidden;
+    }
+.div1 {
+      background-color: #fbfcfb;
+      padding: 20px;
+      font-family: sans-serif;
+      font-weight: bold;
+      text-align: left;
+      max-width: 85%;
+      max-height: 80%;
+      min-width: 400px;
+      border-radius: 5px;
+      margin: 0 auto;
+      margin-top: 55px;
+      left: 50%;
+      overflow: hidden;
+    }
+
+    h1 {
+    border: 8px double #0c3863; 
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    margin-right: 60%;
+    min-width: fit-content;
+    max-width: 200px;
+    color: #fff;
+  text-shadow:
+    3px 3px 0 #206aaf,
+    -3px 3px 0 #206aaf,
+    -3px -3px 0 #206aaf,
+    3px -3px 0 #206aaf;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+}
+
+h2 {
+    position: relative;
+    font-size: medium;
+    border-style: outset;
+    border-left-style: double;
+    border-color: #fbfcfb;
+    border-right-color: #2972b6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #2972b6;
+    font-size: 20px;
+    max-height: fit-content;
+    max-width: fit-content;
+    bottom: -15%;
+    overflow-x: hidden;
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px;
+    font-size: 14px;
+    color: #2972b6;
+    }
+
+
+    #home{
+        float: right;
+        color: #fbfcfb;
+        background-color: #12948c;
+        border-radius: 5px;
+        border: 2px solid #0c3863;
+        min-height: 50px;
+        min-width: 70px;
+        top: 0;
+        position: relative;
+    }
+
+    #home:hover {
+      background-color: #11539e; 
+      color: antiquewhite;
+    }
+
+    #home:active {
+        background-color:rgb(2, 26, 43);
+        color:#b4d8d3;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+
+<div id="grad1"> 
+    <audio id="clickAudio" src="Music/buttonClickSound.wav"></audio>
+    
+    <div class="div1">
+        <button id="home" onclick="sendHome()"> Home </button>
+
+        <h1> Quiz </h1>
+        <h2> Q1. What are the main things one should look for when acknowledging injury and illness </h2>
+        <input type="radio" name="question1"> 8<br>
+        <input type="radio" name="question1"> 9<br>
+    </div>
+
+</div>
+
+</body>
+
+<script type="text/javascript">
+    const homeButton = document.getElementById('home');
+
+    function sendHome(){
+         buttonClickSound();
+    homeButton.disabled = true;
+    setTimeout(() => {
+            homeButton.disabled = false;
+            window.location.href= 'Lazarus_Project.html';
+        }, 300)
+    }
+
+    function buttonClickSound(){
+    clickAudio.volume = 0.3;
+    clickAudio.play();
+}
+
+</script>
+
+</html>
